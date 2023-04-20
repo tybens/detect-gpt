@@ -226,7 +226,8 @@ def sample_from_model(texts, min_words=55, prompt_tokens=30):
         # sample from the model until we get a sample with at least min_words words for each example
         # this is an inefficient way to do this (since we regenerate for all inputs if just one is too short), but it works
         tries = 0
-        while (m := min(len(x.split()) for x in decoded)) < min_words:
+        while min(len(x.split()) for x in decoded) < min_words:
+            m = min(len(x.split()) for x in decoded)
             if tries != 0:
                 print()
                 print(f"min words: {m}, needed {min_words}, regenerating (try {tries})")
@@ -682,7 +683,7 @@ def load_base_model_and_tokenizer(name):
     if args.dataset in ['pubmed']:
         optional_tok_kwargs['padding_side'] = 'left'
     base_tokenizer = transformers.AutoTokenizer.from_pretrained(name, **optional_tok_kwargs, cache_dir=cache_dir)
-    base_tokenizer.pad_token_id = base_tokenizer.eos_token_id
+    base_tokenizer.pad_token_id = [str(base_tokenizer.eos_token_id)]
 
     return base_model, base_tokenizer
 
@@ -777,7 +778,7 @@ if __name__ == '__main__':
     parser.add_argument('--pre_perturb_span_length', type=int, default=5)
     parser.add_argument('--random_fills', action='store_true')
     parser.add_argument('--random_fills_tokens', action='store_true')
-    parser.add_argument('--cache_dir', type=str, default="~/.cache")
+    parser.add_argument('--cache_dir', type=str, default="/scratch/network/tb19/.cache")
     args = parser.parse_args()
 
     API_TOKEN_COUNTER = 0

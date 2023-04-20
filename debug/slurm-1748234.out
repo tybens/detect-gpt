@@ -1,0 +1,20 @@
+Saving results to absolute path: /scratch/network/tb19/cos484-detect-gpt/tmp_results/main/gpt2-xl-t5-3b-temp/2023-04-17-17-19-02-516786-fp32-0.3-1-xsum-500
+Using cache dir /scratch/network/tb19/.cache
+Loading BASE model gpt2-xl...
+Loading mask filling model t5-3b...
+MOVING BASE MODEL TO GPU...DONE (1.01s)
+Loading dataset xsum...
+Traceback (most recent call last):
+  File "/scratch/network/tb19/cos484-detect-gpt/run.py", line 855, in <module>
+    data = generate_data(args.dataset, args.dataset_key)
+  File "/scratch/network/tb19/cos484-detect-gpt/run.py", line 628, in generate_data
+    data = datasets.load_dataset(dataset, split='train', cache_dir=cache_dir)[key]
+  File "/home/tb19/.conda/envs/pytorch/lib/python3.10/site-packages/datasets/load.py", line 1759, in load_dataset
+    builder_instance = load_dataset_builder(
+  File "/home/tb19/.conda/envs/pytorch/lib/python3.10/site-packages/datasets/load.py", line 1496, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+  File "/home/tb19/.conda/envs/pytorch/lib/python3.10/site-packages/datasets/load.py", line 1218, in dataset_module_factory
+    raise e1 from None
+  File "/home/tb19/.conda/envs/pytorch/lib/python3.10/site-packages/datasets/load.py", line 1174, in dataset_module_factory
+    raise ConnectionError(f"Couldn't reach '{path}' on the Hub ({type(e).__name__})")
+ConnectionError: Couldn't reach 'xsum' on the Hub (ConnectionError)
