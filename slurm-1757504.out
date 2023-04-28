@@ -1,0 +1,7 @@
+Saving results to absolute path: /scratch/network/tb19/cos484-detect-gpt/tmp_results/cos484-t5/gpt2-t5-3b-temp/2023-04-28-15-12-58-672174-fp32-0.1-1-xsum-500
+Using cache dir /scratch/network/tb19/.cache
+Loading BASE model gpt2...
+Loading mask filling model t5-3b...
+MOVING BASE MODEL TO GPU...Using the latest cached version of the module from /home/tb19/.cache/huggingface/modules/datasets_modules/datasets/xsum/082863bf4754ee058a5b6f6525d0cb2b18eadb62c7b370b095d1364050a52b71 (last modified on Tue Apr 18 20:13:01 2023) since it couldn't be found locally at xsum., or remotely on the Hugging Face Hub.
+Found cached dataset xsum (/scratch/network/tb19/.cache/xsum/default/1.2.0/082863bf4754ee058a5b6f6525d0cb2b18eadb62c7b370b095d1364050a52b71)
+Token indices sequence length is longer than the specified maximum sequence length for this model (853 > 512). Running this sequence through the model will result in indexing errors
