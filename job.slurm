@@ -12,4 +12,4 @@ module purge
 module load anaconda3/2022.10
 conda activate pytorch
 
-bash paper_scripts/cos484/bart-large-mnli.sh
+bash paper_scripts/cos484/temp.sh
