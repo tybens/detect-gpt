@@ -90,7 +90,7 @@ def replace_masks(texts):
     n_expected = count_masks(texts)
     stop_id = mask_tokenizer.encode(f"<extra_id_{max(n_expected)}>")[0]
     tokens = mask_tokenizer(texts, return_tensors="pt", padding=True).to(DEVICE)
-    outputs = mask_model.generate(**tokens, max_length=150, do_sample=True, top_p=args.mask_top_p, num_return_sequences=1, eos_token_id=stop_id)
+    outputs = mask_model.generate(**tokens, max_length=150, do_sample=True, top_p=args.mask_top_p, temperature=args.temperature, num_return_sequences=1, eos_token_id=stop_id)
     return mask_tokenizer.batch_decode(outputs, skip_special_tokens=False)
 
 
@@ -770,6 +770,7 @@ if __name__ == '__main__':
     parser.add_argument('--output_name', type=str, default="")
     parser.add_argument('--openai_model', type=str, default=None)
     parser.add_argument('--openai_key', type=str)
+    parser.add_argument('--temperature', type=float, default=1)
     parser.add_argument('--baselines_only', action='store_true')
     parser.add_argument('--skip_baselines', action='store_true')
     parser.add_argument('--buffer_size', type=int, default=1)
