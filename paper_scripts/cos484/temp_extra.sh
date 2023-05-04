@@ -1,0 +1,1 @@
+python run.py --output_name cos484-temperature --base_model_name gpt2 --mask_filling_model_name t5-3b --n_perturbation_list 100 --n_samples 500 --pct_words_masked 0.3 --span_length 2 --temperature 2
