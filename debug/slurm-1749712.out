@@ -1,0 +1,44 @@
+Saving results to absolute path: /scratch/network/tb19/cos484-detect-gpt/tmp_results/main/gpt2-xl-t5-3b-temp/2023-04-19-10-37-00-425021-fp32-0.3-1-xsum-500
+Using cache dir /scratch/network/tb19/.cache
+Loading BASE model gpt2-xl...
+Loading mask filling model t5-3b...
+MOVING BASE MODEL TO GPU...Using the latest cached version of the module from /home/tb19/.cache/huggingface/modules/datasets_modules/datasets/xsum/082863bf4754ee058a5b6f6525d0cb2b18eadb62c7b370b095d1364050a52b71 (last modified on Tue Apr 18 20:13:01 2023) since it couldn't be found locally at xsum., or remotely on the Hugging Face Hub.
+Found cached dataset xsum (/scratch/network/tb19/.cache/xsum/default/1.2.0/082863bf4754ee058a5b6f6525d0cb2b18eadb62c7b370b095d1364050a52b71)
+Token indices sequence length is longer than the specified maximum sequence length for this model (853 > 512). Running this sequence through the model will result in indexing errors
+DONE (0.97s)
+Loading dataset xsum...
+Total number of samples: 1829
+Average number of words: 306.9710224166211
+Generating samples for batch 0 of 10
+Generating samples for batch 1 of 10
+Generating samples for batch 2 of 10
+Generating samples for batch 3 of 10
+Generating samples for batch 4 of 10
+Generating samples for batch 5 of 10
+Generating samples for batch 6 of 10
+Generating samples for batch 7 of 10
+Generating samples for batch 8 of 10
+Generating samples for batch 9 of 10
+Writing raw data to tmp_results/main/gpt2-xl-t5-3b-temp/2023-04-19-10-37-00-425021-fp32-0.3-1-xsum-500/raw_data.json
+Computing likelihood criterion:   0%|          | 0/10 [00:00<?, ?it/s]Computing likelihood criterion:  10%|█         | 1/10 [00:06<00:54,  6.10s/it]Computing likelihood criterion:  20%|██        | 2/10 [00:12<00:48,  6.11s/it]Computing likelihood criterion:  30%|███       | 3/10 [00:18<00:42,  6.10s/it]Computing likelihood criterion:  40%|████      | 4/10 [00:24<00:36,  6.08s/it]Computing likelihood criterion:  50%|█████     | 5/10 [00:30<00:30,  6.10s/it]Computing likelihood criterion:  60%|██████    | 6/10 [00:36<00:24,  6.11s/it]Computing likelihood criterion:  70%|███████   | 7/10 [00:42<00:18,  6.10s/it]Computing likelihood criterion:  80%|████████  | 8/10 [00:48<00:12,  6.10s/it]Computing likelihood criterion:  90%|█████████ | 9/10 [00:54<00:06,  6.10s/it]Computing likelihood criterion: 100%|██████████| 10/10 [01:01<00:00,  6.10s/it]Computing likelihood criterion: 100%|██████████| 10/10 [01:01<00:00,  6.10s/it]
+likelihood_threshold ROC AUC: 0.8791599999999999, PR AUC: 0.8496150223780717
+Computing rank criterion:   0%|          | 0/10 [00:00<?, ?it/s]Computing rank criterion:  10%|█         | 1/10 [00:06<00:56,  6.30s/it]Computing rank criterion:  20%|██        | 2/10 [00:12<00:50,  6.30s/it]Computing rank criterion:  30%|███       | 3/10 [00:18<00:44,  6.30s/it]Computing rank criterion:  40%|████      | 4/10 [00:25<00:37,  6.27s/it]Computing rank criterion:  50%|█████     | 5/10 [00:31<00:31,  6.29s/it]Computing rank criterion:  60%|██████    | 6/10 [00:37<00:25,  6.29s/it]Computing rank criterion:  70%|███████   | 7/10 [00:44<00:18,  6.28s/it]Computing rank criterion:  80%|████████  | 8/10 [00:50<00:12,  6.28s/it]Computing rank criterion:  90%|█████████ | 9/10 [00:56<00:06,  6.28s/it]Computing rank criterion: 100%|██████████| 10/10 [01:02<00:00,  6.28s/it]Computing rank criterion: 100%|██████████| 10/10 [01:02<00:00,  6.28s/it]
+rank_threshold ROC AUC: 0.790524, PR AUC: 0.8091126933929396
+Computing log_rank criterion:   0%|          | 0/10 [00:00<?, ?it/s]Computing log_rank criterion:  10%|█         | 1/10 [00:06<00:56,  6.30s/it]Computing log_rank criterion:  20%|██        | 2/10 [00:12<00:50,  6.30s/it]Computing log_rank criterion:  30%|███       | 3/10 [00:18<00:44,  6.29s/it]Computing log_rank criterion:  40%|████      | 4/10 [00:25<00:37,  6.27s/it]Computing log_rank criterion:  50%|█████     | 5/10 [00:31<00:31,  6.29s/it]Computing log_rank criterion:  60%|██████    | 6/10 [00:37<00:25,  6.29s/it]Computing log_rank criterion:  70%|███████   | 7/10 [00:43<00:18,  6.28s/it]Computing log_rank criterion:  80%|████████  | 8/10 [00:50<00:12,  6.28s/it]Computing log_rank criterion:  90%|█████████ | 9/10 [00:56<00:06,  6.28s/it]Computing log_rank criterion: 100%|██████████| 10/10 [01:02<00:00,  6.28s/it]Computing log_rank criterion: 100%|██████████| 10/10 [01:02<00:00,  6.28s/it]
+log_rank_threshold ROC AUC: 0.908568, PR AUC: 0.887564520929254
+Computing entropy criterion:   0%|          | 0/10 [00:00<?, ?it/s]Computing entropy criterion:  10%|█         | 1/10 [00:06<00:55,  6.15s/it]Computing entropy criterion:  20%|██        | 2/10 [00:12<00:49,  6.15s/it]Computing entropy criterion:  30%|███       | 3/10 [00:18<00:43,  6.15s/it]Computing entropy criterion:  40%|████      | 4/10 [00:24<00:36,  6.12s/it]Computing entropy criterion:  50%|█████     | 5/10 [00:30<00:30,  6.14s/it]Computing entropy criterion:  60%|██████    | 6/10 [00:36<00:24,  6.15s/it]Computing entropy criterion:  70%|███████   | 7/10 [00:42<00:18,  6.13s/it]Computing entropy criterion:  80%|████████  | 8/10 [00:49<00:12,  6.13s/it]Computing entropy criterion:  90%|█████████ | 9/10 [00:55<00:06,  6.14s/it]Computing entropy criterion: 100%|██████████| 10/10 [01:01<00:00,  6.14s/it]Computing entropy criterion: 100%|██████████| 10/10 [01:01<00:00,  6.14s/it]
+Some weights of the model checkpoint at roberta-base-openai-detector were not used when initializing RobertaForSequenceClassification: ['roberta.pooler.dense.bias', 'roberta.pooler.dense.weight']
+- This IS expected if you are initializing RobertaForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing RobertaForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+entropy_threshold ROC AUC: 0.5641800000000001, PR AUC: 0.5568465027086535
+Beginning supervised evaluation with roberta-base-openai-detector...
+Traceback (most recent call last):
+  File "/scratch/network/tb19/cos484-detect-gpt/run.py", line 886, in <module>
+    baseline_outputs.append(eval_supervised(data, model='roberta-base-openai-detector'))
+  File "/scratch/network/tb19/cos484-detect-gpt/run.py", line 694, in eval_supervised
+    tokenizer = transformers.AutoTokenizer.from_pretrained(model, cache_dir=cache_dir)
+  File "/home/tb19/.conda/envs/pytorch/lib/python3.10/site-packages/transformers/models/auto/tokenization_auto.py", line 637, in from_pretrained
+    return tokenizer_class_fast.from_pretrained(pretrained_model_name_or_path, *inputs, **kwargs)
+  File "/home/tb19/.conda/envs/pytorch/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 1761, in from_pretrained
+    raise EnvironmentError(
+OSError: Can't load tokenizer for 'roberta-base-openai-detector'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'roberta-base-openai-detector' is the correct path to a directory containing all relevant files for a RobertaTokenizerFast tokenizer.

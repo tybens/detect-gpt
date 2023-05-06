@@ -1,0 +1,1 @@
+python run.py --output_name cos484-t5 --base_model_name gpt2 --mask_filling_model_name t5-3b --n_perturbation_list 100 --n_samples 500 --pct_words_masked 0.7 --span_length 2
