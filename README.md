@@ -1,5 +1,9 @@
 # DetectGPT: Zero-Shot Machine-Generated Text Detection using Probability Curvature
 
+## Final Project COS484
+
+We experiment changing two hyperparameters of the mode: the masked percentage and the temperature of the mask filling model.
+ 
 ## Official implementation of the experiments in the [DetectGPT paper](https://arxiv.org/abs/2301.11305v1).
 
 An interactive demo of DetectGPT can be found [here](https://detectgpt.ericmitchell.ai).
