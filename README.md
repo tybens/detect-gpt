@@ -3,6 +3,12 @@
 ## Final Project COS484
 
 We experiment changing two hyperparameters of the mode: the masked percentage and the temperature of the mask filling model.
+
+## Description of Relevant Files
+
+- `detect-gpt-writeup.pdf`: This is the writeup of our hyperparameter tuning experiment.
+- `run.py`: This contains the script that runs testing of DetectGPT.
+- `paper_scripts/`: This directory contains the calls to `run.py` for each experiment.
  
 ## Official implementation of the experiments in the [DetectGPT paper](https://arxiv.org/abs/2301.11305v1).
 
